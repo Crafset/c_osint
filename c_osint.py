@@ -51,14 +51,14 @@ if __name__ == "__main__":
     print(Fore.MAGENTA + "[ " + Fore.YELLOW + "Welcome" + Fore.MAGENTA + " ]> " + Fore.CYAN + "Welcome to Osint Tool by Adam\n")
     colorama.deinit()
     if args.help:
-       os.system("cls")
+       os.system("clear")
        print(Fore.MAGENTA + "[ " + Fore.YELLOW + "Packages" + Fore.MAGENTA + " ]> " + Fore.CYAN + "-packages\n")
        print(Fore.MAGENTA + "[ " + Fore.YELLOW + "Social" + Fore.MAGENTA + " ]> " + Fore.CYAN + "-social\n")
        colorama.deinit()
 
     if args.social: 
         colorama.init(autoreset=True)
-        os.system("cls")
+        os.system("clear")
         username = input(Fore.MAGENTA + "[ " + Fore.YELLOW + "User-Name" + Fore.MAGENTA + " ]> " + Fore.CYAN)
         print(Fore.MAGENTA + "\n[ " + Fore.YELLOW + f"Scan" + Fore.MAGENTA + " ]> " + Fore.CYAN + f"Scanning...\n")
         results = check_username(username)
